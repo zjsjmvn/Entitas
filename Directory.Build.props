@@ -27,8 +27,8 @@
   <Import Project="Unity3D.props" />
   <PropertyGroup Label="Unity3D">
     <UnityVersion>2021.3.0f1</UnityVersion>
-    <UnityEditor>$(UnityHubPath)/$(UnityVersion)/$(UnityEditorPath)</UnityEditor>
-    <UnityEngine>$(UnityHubPath)/$(UnityVersion)/$(UnityEnginePath)</UnityEngine>
+    <UnityEditor>$(UnityEditorPath)</UnityEditor>
+    <UnityEngine>$(UnityEnginePath)</UnityEngine>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(DOTNET_RUNNING_IN_CONTAINER)' == 'true'">

@@ -21,7 +21,11 @@ namespace Entitas.CodeGeneration.Plugins
 ${memberAssignmentList}
         AddComponent(index, component);
     }
-
+    public void Add${ComponentName}() {
+        var index = ${Index};
+        var component = (${ComponentType})CreateComponent(index, typeof(${ComponentType}));
+        AddComponent(index, component);
+    }
     public void Replace${ComponentName}(${newMethodParameters}) {
         var index = ${Index};
         var component = (${ComponentType})CreateComponent(index, typeof(${ComponentType}));

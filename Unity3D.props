@@ -26,8 +26,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <UnityEnginePath>$(UnityManagedPath)/UnityEngine.dll</UnityEnginePath>
-    <UnityEditorPath>$(UnityManagedPath)/UnityEditor.dll</UnityEditorPath>
+    <UnityEnginePath>$(SolutionDir)unity/Unity-2021.3.0f1//UnityEngine.dll</UnityEnginePath>
+    <UnityEditorPath>$(SolutionDir)unity/Unity-2021.3.0f1//UnityEditor.dll</UnityEditorPath>
   </PropertyGroup>
 
 </Project>
