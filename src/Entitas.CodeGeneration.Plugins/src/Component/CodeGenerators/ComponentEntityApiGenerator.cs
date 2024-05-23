@@ -26,6 +26,10 @@ ${memberAssignmentList}
         var component = (${ComponentType})CreateComponent(index, typeof(${ComponentType}));
         AddComponent(index, component);
     }
+    public ${ComponentType} GetOrAdd${ComponentName}() {
+        if(!has${ComponentName}) Add${ComponentName}();
+        return ${validComponentName};
+    }
     public void Replace${ComponentName}(${newMethodParameters}) {
         var index = ${Index};
         var component = (${ComponentType})CreateComponent(index, typeof(${ComponentType}));
