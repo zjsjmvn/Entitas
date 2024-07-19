@@ -24,6 +24,7 @@ ${memberAssignmentList}
     public void Add${ComponentName}() {
         var index = ${Index};
         var component = (${ComponentType})CreateComponent(index, typeof(${ComponentType}));
+        component.Reset();
         AddComponent(index, component);
     }
     public ${ComponentType} GetOrAdd${ComponentName}() {

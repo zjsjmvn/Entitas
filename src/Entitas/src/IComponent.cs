@@ -10,5 +10,7 @@
     /// available only in the specified contexts.
     /// The code generator can generate these attributes for you.
     /// More available Attributes can be found in Entitas.CodeGeneration.Attributes/Attributes.
-    public interface IComponent { }
+    public interface IComponent {
+         void Reset();
+    }
 }

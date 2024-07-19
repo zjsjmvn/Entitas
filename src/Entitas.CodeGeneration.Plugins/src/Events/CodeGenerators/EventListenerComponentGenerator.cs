@@ -12,6 +12,8 @@ namespace Entitas.CodeGeneration.Plugins
             @"[Entitas.CodeGeneration.Attributes.DontGenerate(false)]
 public sealed class ${EventListenerComponent} : Entitas.IComponent {
     public System.Collections.Generic.List<I${EventListener}> value;
+    public void Reset(){    
+    }
 }
 ";
 
